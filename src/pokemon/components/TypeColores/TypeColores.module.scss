@@ -1,0 +1,36 @@
+/* Colores de los tipos de pokemon */
+
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.color_type{
+    padding: 0.2rem 1rem;
+    width: auto;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+
+
+
+
+
+    /* Media querys */
+    @media #{media-query(small)} {
+        // font-size: 10px;
+        padding: 0.2rem 0.4rem;
+
+
+
+    }
+
+    @media #{media-query(medium)} {
+
+
+    }
+
+    @media #{media-query(large)} {
+
+    }
+
+}

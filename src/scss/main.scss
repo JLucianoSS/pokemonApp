@@ -1,0 +1,18 @@
+
+
+// Importa reset y variables
+@import 'variables';
+@import 'reset';
+
+// Importa mixins
+@import 'mixins';
+
+// Estilos globales
+body {
+  font-family: $base-font;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #333;
+  background-color: $background-color;
+}
+

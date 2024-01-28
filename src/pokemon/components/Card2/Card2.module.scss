@@ -1,0 +1,64 @@
+
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.tarjeta {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgb(197, 197, 197);
+
+
+    .tarjeta_img {
+        // background: orange;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .tarjeta_cuerpo{
+        // background: green;
+
+        .tarjeta_cuerpo_titulo{
+            color: #acacac;
+            font-size: 0.9rem;
+        }
+
+        .tarjeta_cuerpo_enlace{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .tarjeta_cuerpo_tipos{
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            gap: 1rem;
+            
+        }
+    }
+
+
+
+
+
+    /* Media querys */
+    @media #{media-query(small)} {
+        .tarjeta_cuerpo{
+            .tarjeta_cuerpo_tipos{
+                gap:0;
+            }
+        }
+    }
+
+    @media #{media-query(medium)} {
+
+
+    }
+
+    @media #{media-query(large)} {
+
+    }
+}

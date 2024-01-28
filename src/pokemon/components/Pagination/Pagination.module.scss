@@ -1,0 +1,66 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+
+.container {
+    // background-color: yellow;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5rem;
+
+
+    .button_container {
+        // background-color: orange;
+        text-align: center;
+        margin-top: 0px;
+
+
+        .pagination_button {
+            /* color: #fff; */
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            
+        }
+        .active {
+            background-color: $primary-color;
+            color: white;
+        }
+
+    }
+    
+    .total_pages {
+        margin-right: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+
+    
+      /* Media querys */
+    @media #{media-query(small)} {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    @media #{media-query(medium)} {
+
+
+    }
+
+    @media #{media-query(large)} {
+ 
+    }
+
+}

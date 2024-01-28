@@ -1,0 +1,17 @@
+
+
+/* My mixins */
+
+// Función para manejar media queries
+@function media-query($breakpoint) {
+    @if $breakpoint == small {
+      @return 'only screen and (max-width: 767px)';
+    } @else if $breakpoint == medium {
+      @return 'only screen and (min-width: 768px) and (max-width: 1023px)';
+    } @else if $breakpoint == large {
+      @return 'only screen and (min-width: 1024px)';
+    } @else {
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+      @return null;
+    }
+  }

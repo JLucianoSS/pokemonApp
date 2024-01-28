@@ -1,0 +1,52 @@
+
+
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.container_options{
+    width: 100%;
+    background: #fff;
+    border: 1px solid gold; 
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px (0, 0, 0, 0.5); 
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+
+    .label{
+      // background-color: red;
+      display: flex;
+      
+    }
+
+    .checkboxLabel {
+      margin: 5px 2px;
+    }
+      
+    .checkboxLabel input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    .label_disable{
+      color: gainsboro;
+    }
+
+
+
+    /* Media querys */
+    @media #{media-query(small)} {
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    @media #{media-query(medium)} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media #{media-query(large)} {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+  

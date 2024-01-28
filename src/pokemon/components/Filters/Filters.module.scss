@@ -1,0 +1,97 @@
+@import '../../../scss/variables';
+
+.container_btn{
+    // background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    gap: 10px;
+
+    .buttons_origen_filters {
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 2rem;
+        display: flex;
+        gap: 5px;
+    }
+
+    .buttons_order {
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 2rem;
+        display: flex;
+        gap: 5px;
+    }
+
+    .button_stronger{
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 2rem;
+    }
+   
+
+    .btn {
+        border: none;
+        border-radius: 1rem;
+        padding: 4px 12px;
+        background-color: white;
+        color: $primary-color;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .active{
+        border: none;
+        border-radius: 1rem;
+        padding: 4px 12px;
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+
+    .button_Types{
+        position: relative;
+        width: 130px; // Ajusta el ancho según tus necesidades
+
+      
+        select {
+          width: 100%;
+          padding: 6px;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          appearance: none;
+          font-weight: bold;
+          outline: none;
+          cursor: pointer;
+          transition: border-color 0.3s ease-in-out;
+          color: $primary-color
+          ;
+      
+          &:hover {
+            border-color: $primary-color; // Cambia el color del borde al pasar el ratón sobre el select
+          }
+      
+          option {
+            background-color: #fff; // Fondo de las opciones
+            color: #333; // Color del texto de las opciones
+            font-weight: bold;
+      
+            &:hover {
+              background-color: #66afe9; // Cambia el color de fondo al pasar el ratón sobre las opciones
+              color: #fff; // Cambia el color del texto al pasar el ratón sobre las opciones
+            }
+          }
+      
+          // Animación para las opciones
+          option {
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+          }
+        }
+    }
+}
+

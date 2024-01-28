@@ -1,0 +1,14 @@
+.container_loading {
+    /* background: blue; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .loading{
+        /* background: green; */
+        width: 5rem;
+        
+    }
+}
+

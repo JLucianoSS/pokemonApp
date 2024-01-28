@@ -1,0 +1,39 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.container_cards{
+    // background: lightsalmon; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 20px;                            
+    justify-items: center;
+    align-items: center;
+    margin: 0 5rem;
+    padding: 1rem;
+    border: 1px solid rgb(197, 197, 197);
+
+
+
+
+
+     /* Media querys */
+    @media #{media-query(small)} {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr); 
+
+    
+    }
+
+    @media #{media-query(medium)} {
+        margin: 0 3rem;
+        grid-template-columns: repeat(3, 1fr); 
+
+    }
+
+    @media #{media-query(large)} {
+        margin: 0 5rem;
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+}
