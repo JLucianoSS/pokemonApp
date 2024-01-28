@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import style from "./Statbar.module.scss";
+import style from "./StatBar.module.scss";
 
 export const StatBar = ({stat}) => {
 
