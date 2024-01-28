@@ -1,6 +1,6 @@
 
 import { Link, NavLink } from 'react-router-dom';
-import { RiArrowGoBackFill } from "react-icons/ri";
+import { ImExit } from "react-icons/im";
 import styles from "./NavBar.module.scss";
 
 export const NavBar = () => {
@@ -19,7 +19,8 @@ export const NavBar = () => {
         </div>
         <div className={styles.logout}>
           <Link className={styles.logout__link} to="/welcome">
-            <RiArrowGoBackFill />
+            <ImExit />
+            <p className={`fs-6 ${styles.hide_phone}`}>Leave</p>
           </Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { setCategory, setOrder, toggleStrongerVisible, toggleTypeVisible } from 
 import { filterByOrigen, filterByType, orderByAttack, orderByName } from "../../../redux/slices/pokemons/pokemonsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getTypes } from "../../../redux/slices/types/thunks";
+import { navigatePage } from "../../../redux/slices/pagination";
 import styles from "./Filters.module.scss";
 
 
@@ -16,6 +17,7 @@ export const Filters = () => {
 
   /* FILTERS ORIGEN */
   const handleCategoryClick = (category) => {
+    dispatch(navigatePage(1));
     dispatch(filterByOrigen(category));
     dispatch(setCategory(category));
   };
@@ -26,6 +28,7 @@ export const Filters = () => {
   const handleTypeClick = (event) => {
     const type = event.target.value;
     const selectedValue = event.target.value;
+    dispatch(navigatePage(1));
     dispatch(filterByType(type));
     dispatch(toggleTypeVisible(selectedValue));
   };

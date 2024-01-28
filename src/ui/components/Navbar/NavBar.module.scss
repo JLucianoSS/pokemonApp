@@ -50,6 +50,9 @@ $padding-nav-links: 0.8rem 1rem;
                 display: flex;
                 text-decoration: none;
                 color: $tertiry-color;
+                .hide_phone{
+                    display: inline-block;
+                }
             }
         }
     }
@@ -82,6 +85,13 @@ $padding-nav-links: 0.8rem 1rem;
             padding: 0 2rem;
             img {
                 width: 200px;
+            }
+        }
+        .logout {
+            .logout__link {
+                .hide_phone{
+                    display: none;
+                }
             }
         }
     }

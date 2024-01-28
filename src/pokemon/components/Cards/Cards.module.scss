@@ -1,5 +1,4 @@
-@import '../../../scss/variables';
-@import '../../../scss/mixins';
+
 
 .container_cards{
     // background: lightsalmon; 
@@ -14,24 +13,32 @@
     // border: 1px solid rgb(197, 197, 197);
 
 
-
-
-
-     /* Media querys */
-    @media #{media-query(small)} {
+    // Extra small devices (phones, 600px and down)
+    @media only screen and (max-width: 600px) {
         margin: 0;
-        grid-template-columns: repeat(2, 1fr); 
-
+        grid-template-columns: repeat(1, 1fr);
+    }
     
+    // Small devices (portrait tablets and large phones, 600px and up)
+    @media only screen and (min-width: 600px) {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    @media #{media-query(medium)} {
+    
+    // Medium devices (landscape tablets, 768px and up)
+    @media only screen and (min-width: 768px) {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    // Large devices (laptops/desktops, 992px and up)
+    @media only screen and (min-width: 992px) {
         margin: 0 3rem;
-        grid-template-columns: repeat(3, 1fr); 
-
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    @media #{media-query(large)} {
+    
+    // Extra large devices (large laptops and desktops, 1200px and up)
+    @media only screen and (min-width: 1200px) {
         margin: 0 5rem;
         grid-template-columns: repeat(4, 1fr); 
     }
@@ -39,6 +46,8 @@
     
 
 }
+
+
 
 
 

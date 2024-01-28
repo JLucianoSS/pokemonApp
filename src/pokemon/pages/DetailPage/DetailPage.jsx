@@ -1,4 +1,5 @@
 
+import { IoArrowBack } from "react-icons/io5";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { Loading } from "../../../ui";
 import { useGetPokemonByIdQuery } from "../../../redux/apis";
@@ -86,6 +87,8 @@ export const DetailPage = () => {
                       className="btn btn-outline-primary"
                       onClick={ onNavigateback }
                   >
+                    <IoArrowBack />
+                      &nbsp;
                       Go Back
                   </button>
                 </div>

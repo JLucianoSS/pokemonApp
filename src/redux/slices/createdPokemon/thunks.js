@@ -17,7 +17,7 @@ export const addPokemon = ( pokemon ) => {
             dispatch( setPokemonCreated(data) );
             Swal.fire({
                 title: "Pokemon created!",
-                text: "Go to pokedex to see it",
+                text: "Go to pokedex and reload",
                 icon: "success"
               });
             

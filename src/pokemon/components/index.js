@@ -11,3 +11,4 @@ export * from './OptionTypes/OptionTypes';
 export * from './TypeColores/TypeColores';
 export * from './StatBar/StatBar';
 export * from './Card2/Card2';
+export * from './ReloadFloatingButton/ReloadFloatingButton';
