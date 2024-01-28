@@ -4,19 +4,23 @@
 
 
 .barra {
-    width: 200px;
-    height: 20px;
-    background-color: #ccc;
-    position: relative;
-    margin: 20px;
+  width: 200px;
+  height: 20px;
+  background-color: #ccc;
+  position: relative;
+  margin: 20px;
 
-    .relleno {
-      height: 100%;
-      width: 0;
-      background-color: $primary-color;
-      position: absolute;
-      /* animation: 2s ease forwards; */
-    }
+  .relleno {
+    height: 100%;
+    width: 0;
+    background-color: $primary-color;
+    position: absolute;
+  }
 
-  }  
+  // Extra small devices (phones, 600px and down)
+  @media only screen and (max-width: 500px) {
+    width: 150px;
+  }
+
+}  
 
