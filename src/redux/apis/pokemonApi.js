@@ -1,12 +1,14 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
+
 export const pokemonApi = createApi({
 
     reducerPath: 'pokemon',
 
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:3001/api'
+        baseUrl: `${apiUrl}`
     }),
 
     endpoints: (builder) => ({

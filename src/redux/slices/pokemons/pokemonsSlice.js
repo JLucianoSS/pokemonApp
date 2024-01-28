@@ -6,7 +6,7 @@ export const pokemonsSlice = createSlice({
     name: 'pokemon',
     initialState: {
         pokemons: [],
-        isLoading: false,
+        isLoading: true,
 
         allPokemons: [],
         appliedFilters: {
@@ -23,9 +23,9 @@ export const pokemonsSlice = createSlice({
             state.isLoading = true
         },
         setPokemons: ( state, action ) => {
-            state.isLoading = false;            
             state.pokemons = action.payload.pokemons
             state.allPokemons = action.payload.pokemons
+            state.isLoading = false;            
         },
 
         //FILTRADO DE POKEMONS

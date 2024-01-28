@@ -11,7 +11,8 @@ export const PokemonsPage = ({ pokemons,isLoading }) => {
 
       <Cards pokemons={pokemons} isLoading={isLoading} /> 
       
-    
+      
+      
     </>
   )
 }

@@ -15,18 +15,33 @@ export const Cards = ({ pokemons, isLoading }) => {
    const indexOfFirstPage = indexOfLastPage - pokemonsPerPage;
    const visiblePokemons = pokemons.slice(indexOfFirstPage, indexOfLastPage);
    const pokemonListToRender = pokemons.length === 1 ? pokemons : visiblePokemons;
+  
 
-
+  const notFound = () => {
+    return (
+      <center>
+        <div className='card'>
+          <p className='p-3'>No hay pokemones para mostrar</p>
+        </div>
+      </center>
+    );
+  }
+    
+  
 
   return (
     <>
-      {
-        isLoading ? <Loading /> : (
-          <>
-            <div
-              className={`${styles.container_cards} animate__animated animate__fadeIn`}
-            >
-              {pokemonListToRender.map((pokemon) => (
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <div
+            className={`${styles.container_cards} animate__animated animate__fadeIn`}
+          >
+            {pokemonListToRender.length === 0 ? (
+              notFound()
+            ) : (
+              pokemonListToRender.map((pokemon) => (
                 <Card
                   key={pokemon.id}
                   id={pokemon.id}
@@ -34,16 +49,16 @@ export const Cards = ({ pokemons, isLoading }) => {
                   images={pokemon.images}
                   types={pokemon.types}
                 />
-              ))}
-            </div>
-            <Pagination
-              pages={pages}
-              currentPage={currentPage}
-              totalPages={totalPages}
-            />
-          </>
-        )
-      }
+              ))
+            )}
+          </div>
+          <Pagination
+            pages={pages}
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+        </>
+      )}
     </>
   );
 };
