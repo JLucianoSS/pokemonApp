@@ -1,6 +1,6 @@
 
 
-import { pokemonApi } from "../../../api/pokemonsAPI";
+import { pokemonApi } from "../../../api/pokemonsApi";
 import { setPokemon,startLoadingPokemon  } from "./pokemonSlice";
 
 

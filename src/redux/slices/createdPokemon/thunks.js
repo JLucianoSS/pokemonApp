@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { pokemonApi } from "../../../api/pokemonsAPI";
+import { pokemonApi } from "../../../api/pokemonsApi";
 import { startLoadingPokemon, setPokemonCreated } from "./createSlice";
 
 

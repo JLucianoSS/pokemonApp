@@ -1,4 +1,4 @@
-import { pokemonApi } from "../../../api/pokemonsAPI";
+import { pokemonApi } from "../../../api/pokemonsApi";
 import {  setTypes, startLoadingTypes } from "./typesSlice";
 
 
